@@ -27,5 +27,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
     compile 'com.getsentry.raven:raven-android:8.0.3'
+    compile 'com.buddybuild:sdk:0.0.70@aar'
+    compile 'com.squareup:seismic:1.0.2'
+    compile 'ch.acra:acra:4.6.2'
     testCompile 'junit:junit:4.12'
 }

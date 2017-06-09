@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.buddybuild.sdk.BuddyBuild;
 import com.getsentry.raven.android.Raven;
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         String sentryDsn = "http://credentials@127.0.0.1/5";
 
         if (Config.ENABLE_SENTRY) Raven.init(ctx, sentryDsn);
+        if (Config.ENABLE_BUDDYBUILD) BuddyBuild.setup(this);
         log.debug("onCreate() run");
     }
 
